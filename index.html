@@ -8,11 +8,11 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="0" />
-    <title>Minutos Pagantes - Anny Slots</title>
-    <meta name="description" content="Minutos Pagantes - Anny Slots: Jogue Slots e Ganhe Prêmios Incríveis!
+    <title>Minutos Pagantes - Renda IGaming</title>
+    <meta name="description" content="Minutos Pagantes - Banca Milionária: Jogue Slots e Ganhe Prêmios Incríveis!
 
 Transforme seus minutos em dinheiro!" />
-    <meta name="keyword" content="Sinais do Anny Slots, Lancou Pagou, Minutos Pagantes, Fortune Tiger, Fortune Rabbit, Fortune Mouse, Fortune Ox, Sala de Sinais" />
+    <meta name="keyword" content="Sinais da Laíse, Sinais do Guga, Minutos Pagantes, Fortune Tiger, Fortune Rabbit, Fortune Mouse, Fortune Ox, Sala de Sinais" />
     <link rel="canonical" href="index.html" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
         integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
@@ -61,6 +61,14 @@ Transforme seus minutos em dinheiro!" />
             vertical-align: middle;
             border-style: none
         }
+       
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+}
 
         .title {
             display: flex;
@@ -491,6 +499,24 @@ Transforme seus minutos em dinheiro!" />
         ::-webkit-scrollbar-thumb:hover {
             background: #b14b92;
         }
+        
+        .pcl-viewers {
+            display: flex;
+            color: green;
+            /*mude a cor do número aqui*/
+            font-size: 20px;
+            font-family: "Poppins", Sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center
+        }
+        .texto {
+            color: #ffffff;
+            /*mude a cor do texto aqui*/
+            margin-left: 5px;
+            font-weight: bold;
+            font-family: "Poppins", Sans-serif;
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -510,6 +536,34 @@ Transforme seus minutos em dinheiro!" />
 
   gtag('config', 'G-72QJJR4160');
 </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function random(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function countViewer(min, max, elementID) {
+                var element = document.querySelector(elementID);
+                var count = random(min, max);
+
+                setInterval(function () {
+                    var variation = random(-5, 5);
+
+                    count += variation;
+                    if (count < min) {
+                        count = min;
+                    } else if (count > max) {
+                        count = max;
+                    }
+                    element.textContent = count;
+
+                }, 2000); // Ajuste o intervalo conforme necess谩rio
+            }
+
+            // Definindo numero minimo e m谩ximo para a contagem de visualizadores
+            countViewer(1581, 1694, '#numberViewer');
+        });
+    </script>
 </head>
 
 <body>
@@ -519,16 +573,26 @@ Transforme seus minutos em dinheiro!" />
         </div>
         <section class="slot">
             <div id="subtitles">
-                <h2>✅️ Acesse os minutos pagantes e percentual dos jogos de forma atualizada. ✅️</h2>
-                <h3><span class="yellowHighlight">Atenção</span>: Válido para todas as plataforma indicadas nos grupos do Telegram e WhatsApp</h3>
+                <h2>✅️ Esse site possui um sistema de análises que é atualizado constantemente. Boa diversão! ✅️</h2>
+                <h3><span class="yellowHighlight">Atenção</span>: jogos proibidos para menores de 18 anos. Jogue com responsabilidade.</h3>
             </div>
-            
+
+<a href="redirbanner.html" target="_blank">
+  <img class="banner-img" src="img/bannerdiv.jpg" alt="Descrição da imagem">
+</a>
             <div class="container mt-2">
                 <!-- Botões de alternância -->
                 <div class="d-flex justify-content-center mb-2" id="selectWhereFrom">
                     <button class="btn btn-success m-2 tabChangeButton active" id="pgsoftBtn">PGSoft</button>
                     <button class="btn btn-warning text-white m-2 tabChangeButton" id="pragmaticBtn">Pragmatic</button>
                 </div>
+<div class="pcl-viewers">
+    <img src="https://mistergreenbets.github.io/BancaMilionaria/img/live.png" height="25px">
+    <div class="usuarios">
+        <div id="numberViewer">1694</div>
+    </div>
+    <div class="texto">jogadores lucrando agora</div>
+</div>
 
                 <div class="content" id="pgSoftContent">
                     <!-- Conteúdo do pgSoft -->
@@ -5138,7 +5202,7 @@ Transforme seus minutos em dinheiro!" />
 
         <div class="notification">
             <div class="notification-header">
-                <h3 class="notification-title">Notificação - Anny Slots</h3>
+                <h3 class="notification-title">Notificação - Banca Milionária</h3>
                 <i class="fa fa-times notification-close"></i>
             </div>
             <div class="notification-container">
@@ -5196,7 +5260,7 @@ Transforme seus minutos em dinheiro!" />
 
         async function getPlatformsFromAPI() {
             try {
-                const response = await fetch('https://mistergreenbets.github.io/AnnySlots/annyplataformas.json');
+                const response = await fetch('https://mistergreenbets.github.io/BancaMilionaria/plataformas.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch platforms from the API.');
                 }
@@ -5342,9 +5406,9 @@ Transforme seus minutos em dinheiro!" />
             });
         });
     </script>
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-<a id="robbu-whatsapp-button" target="_blank" href="https://wa.me/5591984154353">
-  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    <link rel="stylesheet" href="css/whatsapp-button.css">
+<a id="robbu-whatsapp-button" target="_blank" href="https://t.me/BancaMilionariaAdm">
+  <img src="https://mistergreenbets.github.io/BancaMilionaria/imagens/tele.png">
 </a>
 </body>
 
